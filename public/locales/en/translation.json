@@ -1,8 +1,10 @@
 {
-    "Язык": "English",
-    "Главная": "Main page",
-    "О сайте": "About page",
-    "Toggle": "toggle",
-    "Загрузка":"Loading...",
-    "Страница не найдена" : "Page not found"
+  "Язык": "English",
+  "Главная": "Main page",
+  "О сайте": "About page",
+  "Toggle": "toggle",
+  "Загрузка": "Loading...",
+  "Страница не найдена": "Page not found",
+  "Обновить страницу": "Reload page",
+  "Что-то пошло не так": "Something went wrong"
 }
