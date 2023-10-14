@@ -1,5 +1,7 @@
 {
   "Toggle": "Toggle",
+  "decrement": "decrement",
+  "increment": "increment",
   "Войти": "Login",
   "Главная": "Главная",
   "Загрузка": "Загрузка",

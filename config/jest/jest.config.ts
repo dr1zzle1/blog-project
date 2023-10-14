@@ -22,6 +22,9 @@ export default {
     moduleDirectories: [
         'node_modules',
     ],
+    globals: {
+        __IS_DEV__: true,
+    },
     modulePaths: [
         '<rootDir>src',
     ],
