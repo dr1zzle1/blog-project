@@ -7,15 +7,14 @@ import { useTheme } from "./providers/ThemeProvider/lib/useTheme";
 import { classNames } from "shared/lib/classNames/classNames";
 import { Suspense } from "react";
 import { AppRouter } from "./providers/router";
+import { Navbar } from "widgets/Navbar";
 
 function App() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className={classNames("app", {}, [theme])}>
-      <button onClick={() => toggleTheme()}>Toggle </button>
-      <Link to={"/"}>Главная</Link>
-      <Link to={"/about"}>О нас</Link>
+      <Navbar />
       <AppRouter />
     </div>
   );
