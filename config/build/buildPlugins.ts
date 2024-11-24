@@ -1,8 +1,7 @@
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import miniCssExtractPlugin from "mini-css-extract-plugin";
 import webpack from "webpack";
-import path from "path";
-import { BuildOptions, BuildPaths } from "./types/config";
+import { BuildOptions } from "./types/config";
 
 export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPluginInstance[] {
   return [
@@ -10,6 +9,7 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
       template: paths.html,
     }),
     new webpack.ProgressPlugin(),
+    // eslint-disable-next-line
     new miniCssExtractPlugin({
       filename: "css/[name].[contenthash:8].css",
       chunkFilename: "css/[name].[contenthash:8].css",

@@ -10,7 +10,7 @@ const ThemeProvider: React.FC = ({ children }) => {
       theme,
       setTheme,
     }),
-    [theme]
+    [theme],
   );
 
   return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;

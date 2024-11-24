@@ -13,6 +13,7 @@ declare module "*.jpeg";
 
 declare module "*.svg" {
   import React = require("react");
+
   export const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
   export default SVG;
 }
