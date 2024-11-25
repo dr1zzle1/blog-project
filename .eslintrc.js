@@ -32,7 +32,7 @@ module.exports = {
     "no-underscore-dangle": "off",
     "i18next/no-literal-string": ["error", { markupOnly: true, ignoreAttribute: ["to"] }],
     quotes: ["error", "double"],
-    "trailing-comma": "false",
+    "comma-dangle": "off",
   },
   globals: {
     __IS_DEV__: true,
