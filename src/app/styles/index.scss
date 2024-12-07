@@ -1,10 +1,9 @@
-@import "./variables/global";
-@import "./reset";
-@import "./themes/normal";
-@import "./themes/dark";
+@import "reset";
+@import "variables/global";
+@import "themes/normal";
+@import "themes/dark";
 
 .app {
-  // background: #000;
   font: var(--font-m);
   background: var(--bg-color);
   color: var(--primary-color);
