@@ -12,7 +12,8 @@
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "npx jest --config ./config/jest/jest.config.ts",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "storybook:build": "storybook build -c ./config/storybook"
+    "storybook:build": "storybook build -c ./config/storybook",
+    "start:dev:server": "node ./json-server/index.js"
   },
   "keywords": [],
   "author": "",
@@ -57,6 +58,7 @@
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "json-server": "^0.17.0",
     "mini-css-extract-plugin": "^2.5.3",
     "regenerator-runtime": "^0.13.9",
     "sass": "^1.49.9",
