@@ -1,6 +1,4 @@
-import React, {
-  useCallback, useEffect, useRef, useState
-} from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
 
 import { useTheme } from "app/providers/ThemeProvider";
@@ -17,9 +15,7 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-  const {
-    className, children, isOpen, onClose
-  } = props;
+  const { className, children, isOpen, onClose } = props;
 
   const [isClosing, setIsClosing] = useState(false);
   const { theme } = useTheme();
@@ -62,7 +58,7 @@ export const Modal = (props: ModalProps) => {
 
   return (
     <Portal>
-      <div className={classNames(cls.Modal, mods, [className, cls[theme]])}>
+      <div className={classNames(cls.Modal, mods, [className, theme])}>
         <div className={cls.overlay} onClick={closeHandler}>
           <div className={cls.content} onClick={(event) => event.stopPropagation()}>
             {children}
