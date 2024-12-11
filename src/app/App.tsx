@@ -1,12 +1,19 @@
 import { classNames } from "shared/lib/classNames/classNames";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { Navbar } from "widgets/Navbar";
 import { Sidebar } from "widgets/Sidebar";
 import { PageLoader } from "shared/ui/PageLoader/PageLoader";
+import { useDispatch } from "react-redux";
+import { userActions } from "entities/User";
 import { AppRouter } from "./providers/router";
-import { useTheme } from "./providers/ThemeProvider/lib/useTheme";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(userActions.initAuthData());
+  }, [dispatch]);
+
   return (
     <div className={classNames("app", {}, [])}>
       <Suspense fallback={<PageLoader />}>
